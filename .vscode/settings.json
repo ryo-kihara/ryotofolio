@@ -1,0 +1,13 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "javascript.suggest.paths": false,
+  "path-autocomplete.pathMappings": {
+    "@/": "${folder}/src"
+  },
+  "path-autocomplete.includeExtension": true
+}
