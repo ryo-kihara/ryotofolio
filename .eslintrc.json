@@ -4,6 +4,13 @@
   "rules": {
     "no-console": "warn",
     "unused-imports/no-unused-imports": "error",
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
     "import/order": [
       "error",
       {
