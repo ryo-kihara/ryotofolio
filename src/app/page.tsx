@@ -2,11 +2,11 @@ import { GithubServiceHeatmap } from '@/components/Domain/GithubServiceHeatmap/G
 import { GoogleTodoServiceHeatmap } from '@/components/Domain/GoogleTodoServiceHeatmap/GoogleTodoServiceHeatmap'
 import { XServiceHeatmap } from '@/components/Domain/XServiceHeatmap/XServiceHeatmap'
 
-import styles from './page.module.css'
+import * as styles from './page.css'
 
 export default function HomePage() {
   return (
-    <main className={styles.main}>
+    <main className={styles.container}>
       <GithubServiceHeatmap />
       <XServiceHeatmap />
       <GoogleTodoServiceHeatmap />
