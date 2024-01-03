@@ -17,7 +17,7 @@ export const ServiceHeatmap = ({ className, imgSrc, imgAlt, heatmapValue, heatma
   return (
     <div className={clsx(styles.container, className)}>
       <Image src={imgSrc} alt={imgAlt} width={40} height={40} />
-      <Heatmap value={heatmapValue} panelColors={heatmapColors} />
+      <Heatmap className={styles.heatmap} value={heatmapValue} panelColors={heatmapColors} />
     </div>
   )
 }

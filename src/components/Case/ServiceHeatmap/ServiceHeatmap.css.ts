@@ -6,3 +6,7 @@ export const container = style({
   alignItems: 'center',
   flex: 1,
 })
+
+export const heatmap = style({
+  marginTop: '1.5rem',
+})
