@@ -23,7 +23,7 @@ export const XServiceHeatmap = ({ className }: Props) => {
       imgAlt="X Logo"
       heatmapValue={value}
       heatmapColors={{
-        0: '#EBEDF0',
+        1: '#EBEDF0',
         4: '#DBE9F6',
         8: '#A4CCF4',
         12: '#4A99E9',

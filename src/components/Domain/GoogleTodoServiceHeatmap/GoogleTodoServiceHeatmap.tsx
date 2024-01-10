@@ -23,7 +23,7 @@ export const GoogleTodoServiceHeatmap = ({ className }: Props) => {
       imgAlt="Google ToDo Logo"
       heatmapValue={value}
       heatmapColors={{
-        0: '#EBEDF0',
+        1: '#EBEDF0',
         4: '#CFDDF8',
         8: '#93B2EE',
         12: '#3871E0',

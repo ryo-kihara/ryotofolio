@@ -14,5 +14,13 @@ export const GithubServiceHeatmap = async ({ className }: Props) => {
     .flat()
     .map((day) => ({ date: day.date, count: day.contributionCount }))
 
-  return <ServiceHeatmap className={className} imgSrc="/github.svg" imgAlt="Github Logo" heatmapValue={value} />
+  return (
+    <ServiceHeatmap
+      className={className}
+      imgSrc="/github.svg"
+      imgAlt="Github Logo"
+      heatmapValue={value}
+      heatmapColors={{ 1: '#EBEDF0', 4: '#C6E48B', 8: '#7BC96F', 12: '#239A3B', 32: '#196127' }}
+    />
+  )
 }
