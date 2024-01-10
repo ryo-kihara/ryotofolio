@@ -16,9 +16,9 @@ export type ContributionsCollection = {
 }
 
 const query = gql`
-  query ($userName: String!) {
+  query ($userName: String!, $from: DateTime!, $to: DateTime!) {
     user(login: $userName) {
-      contributionsCollection {
+      contributionsCollection(from: $from, to: $to) {
         contributionCalendar {
           totalContributions
           weeks {
@@ -40,6 +40,8 @@ export const useGetContributionsCollection = async () => {
     query,
     variables: {
       userName: 'ryo-kihara',
+      from: `${new Date().getFullYear()}-01-01T00:00:00Z`,
+      to: new Date().toISOString(),
     },
   })
 
