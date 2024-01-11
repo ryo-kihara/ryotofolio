@@ -19,6 +19,7 @@ export const GoogleTodoServiceHeatmap = ({ className }: Props) => {
   return (
     <ServiceHeatmap
       className={className}
+      imgHref="https://calendar.google.com/calendar/u/0/r/tasks"
       imgSrc="/google-todo.png"
       imgAlt="Google ToDo Logo"
       heatmapValue={value}

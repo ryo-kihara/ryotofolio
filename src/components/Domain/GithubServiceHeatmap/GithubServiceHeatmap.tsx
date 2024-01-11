@@ -17,6 +17,7 @@ export const GithubServiceHeatmap = async ({ className }: Props) => {
   return (
     <ServiceHeatmap
       className={className}
+      imgHref="https://github.com/ryo-kihara"
       imgSrc="/github.svg"
       imgAlt="Github Logo"
       heatmapValue={value}

@@ -19,6 +19,7 @@ export const XServiceHeatmap = ({ className }: Props) => {
   return (
     <ServiceHeatmap
       className={className}
+      imgHref="https://twitter.com/rfse1008"
       imgSrc="/x.png"
       imgAlt="X Logo"
       heatmapValue={value}
