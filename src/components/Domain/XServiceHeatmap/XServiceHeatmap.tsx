@@ -1,5 +1,7 @@
 import { ServiceHeatmap } from '@/components/Case/ServiceHeatmap/ServiceHeatmap'
 
+import { useGetMe } from '@/hooks/api/external/x/users/useGetMe'
+
 export type Props = {
   className?: string
 }
@@ -15,7 +17,9 @@ const value = [
   { date: '2024/05/04', count: 11 },
 ]
 
-export const XServiceHeatmap = ({ className }: Props) => {
+export const XServiceHeatmap = async ({ className }: Props) => {
+  await useGetMe({ 'user.fields': 'public_metrics' })
+
   return (
     <ServiceHeatmap
       className={className}
