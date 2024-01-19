@@ -17,3 +17,7 @@ $ npm install
 ```bash
 $ npm run dev
 ```
+
+## 📬 Contact
+
+- [GitHub](https://github.com/ryo-kihara)
