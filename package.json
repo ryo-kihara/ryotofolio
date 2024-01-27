@@ -13,6 +13,7 @@
     "@apollo/experimental-nextjs-app-support": "^0.5.2",
     "@uiw/react-heat-map": "^2.2.1",
     "@vanilla-extract/css": "^1.14.0",
+    "@vercel/kv": "^1.0.1",
     "axios": "^1.6.5",
     "axios-oauth-1.0a": "^0.3.6",
     "clsx": "^2.1.0",
