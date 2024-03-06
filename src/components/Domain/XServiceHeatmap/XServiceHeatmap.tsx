@@ -1,24 +1,34 @@
-import { ServiceHeatmap } from '@/components/Case/ServiceHeatmap/ServiceHeatmap'
+import { kv } from '@vercel/kv'
 
-import { useGetMe } from '@/hooks/api/external/x/users/useGetMe'
+import { ServiceHeatmap } from '@/components/Case/ServiceHeatmap/ServiceHeatmap'
 
 export type Props = {
   className?: string
 }
 
-const value = [
-  { date: '2024/01/11', count: 2 },
-  { date: '2024/01/12', count: 20 },
-  { date: '2024/01/13', count: 10 },
-  ...[...Array(17)].map((_, idx) => ({ date: `2024/02/${idx + 10}`, count: idx, content: '' })),
-  { date: '2024/04/11', count: 2 },
-  { date: '2024/05/01', count: 5 },
-  { date: '2024/05/02', count: 5 },
-  { date: '2024/05/04', count: 11 },
-]
+// テストデータ
+// const value = [
+//   { date: '2024/01/11', count: 2 },
+//   { date: '2024/01/12', count: 20 },
+//   { date: '2024/01/13', count: 10 },
+//   ...[...Array(17)].map((_, idx) => ({ date: `2024/02/${idx + 10}`, count: idx, content: '' })),
+//   { date: '2024/04/11', count: 2 },
+//   { date: '2024/05/01', count: 5 },
+//   { date: '2024/05/02', count: 5 },
+//   { date: '2024/05/04', count: 11 },
+// ]
 
 export const XServiceHeatmap = async ({ className }: Props) => {
-  await useGetMe({ 'user.fields': 'public_metrics' })
+  // await useGetMe({ 'user.fields': 'public_metrics' })
+
+  const keys = await kv.keys('')
+  const value = await Promise.all(
+    keys.map(async (key) => {
+      const date = key
+      const count = (await kv.get<number>(key)) || 0
+      return { date, count }
+    }),
+  )
 
   return (
     <ServiceHeatmap
