@@ -17,8 +17,10 @@
     "axios-oauth-1.0a": "^0.3.6",
     "clsx": "^2.1.0",
     "next": "14.0.4",
+    "next-themes": "^0.2.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-icons": "^5.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",
