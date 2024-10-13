@@ -1,3 +1,46 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "plugins": ["import", "unused-imports"],
+  "rules": {
+    "unused-imports/no-unused-imports": "error",
+    "import/no-duplicates": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"],
+        "pathGroups": [
+          {
+            "pattern": "{next,next/**,react,react-dom}",
+            "group": "builtin",
+            "position": "before"
+          },
+          {
+            "pattern": "@/components/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/lib/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "**/*.css",
+            "group": "index",
+            "position": "after"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin"],
+        "alphabetize": {
+          "order": "asc"
+        },
+        "newlines-between": "always"
+      }
+    ]
+  }
 }
