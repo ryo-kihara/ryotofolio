@@ -1,9 +1,16 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"],
+  "extends": ["next/core-web-vitals", "next/typescript", "plugin:tailwindcss/recommended"],
   "plugins": ["import", "unused-imports"],
   "rules": {
     "unused-imports/no-unused-imports": "error",
     "import/no-duplicates": "error",
+    "@typescript-eslint/consistent-type-imports": [
+      "error",
+      {
+        "prefer": "type-imports",
+        "fixStyle": "inline-type-imports"
+      }
+    ],
     "import/order": [
       "error",
       {
