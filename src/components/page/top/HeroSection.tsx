@@ -6,7 +6,7 @@ import { BlurFade } from '@/components/ui/BlurFade'
 export const HeroSection = () => {
   return (
     <section id="hero" className="flex justify-center">
-      <div className="flex flex-col gap-3 items-center">
+      <div className="flex flex-col items-center gap-3">
         <BlurFade>
           <Avatar className="size-16 md:size-20">
             <AvatarImage alt={'My Avatar'} src={MeImage.src} />

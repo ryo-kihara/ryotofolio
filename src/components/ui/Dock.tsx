@@ -1,6 +1,6 @@
 'use client'
 
-import React, { PropsWithChildren, useRef } from 'react'
+import React, { type PropsWithChildren, useRef } from 'react'
 
 import { cva, type VariantProps } from 'class-variance-authority'
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
@@ -18,7 +18,7 @@ export interface DockProps extends VariantProps<typeof dockVariants> {
 const DEFAULT_MAGNIFICATION = 60
 const DEFAULT_DISTANCE = 140
 
-const dockVariants = cva('mx-auto w-max h-full p-2 flex items-end rounded-full border')
+const dockVariants = cva('mx-auto flex h-full w-max items-end rounded-full border p-2')
 
 const Dock = React.forwardRef<HTMLDivElement, DockProps>(
   ({ className, children, magnification = DEFAULT_MAGNIFICATION, distance = DEFAULT_DISTANCE, ...props }, ref) => {
