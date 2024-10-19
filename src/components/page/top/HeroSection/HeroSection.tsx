@@ -1,7 +1,7 @@
-import MeImage from '@/assets/images/me.jpeg'
-
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/Avatar'
 import { BlurFade } from '@/components/ui/BlurFade'
+
+import { DATA } from './HeroSection.data'
 
 export const HeroSection = () => {
   return (
@@ -9,20 +9,25 @@ export const HeroSection = () => {
       <div className="flex flex-col items-center gap-3">
         <BlurFade>
           <Avatar className="size-16 md:size-20">
-            <AvatarImage alt={'My Avatar'} src={MeImage.src} />
+            <AvatarImage alt={'My Avatar'} src={DATA.avatar} />
             <AvatarFallback>R</AvatarFallback>
           </Avatar>
         </BlurFade>
         <BlurFade className="text-3xl font-bold sm:text-5xl xl:text-6xl" inView>
-          Hi, I&apos;m Ryo.
+          Hi, I&apos;m {DATA.name}.
         </BlurFade>
-        <BlurFade className="max-w-xl text-center text-sm md:text-base" inView>
-          <span className="inline-block">何でも屋のウェブ開発者です。</span>
-          <span className="inline-block">最新技術に常に飢えています。</span>
+        <BlurFade className="max-w-xl text-center md:text-base" inView>
+          {DATA.description.ja.map((description, index) => (
+            <span key={index} className="inline-block">
+              {description}
+            </span>
+          ))}
           <br className="hidden md:inline" />
-          <span className="inline-block">
-            Jack-of-all-trades web developer.Always hungry for the latest tech trends.
-          </span>
+          {DATA.description.en.map((description, index) => (
+            <span key={index} className="inline-block">
+              {description}
+            </span>
+          ))}
         </BlurFade>
       </div>
     </section>
