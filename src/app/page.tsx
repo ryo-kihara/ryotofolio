@@ -3,6 +3,7 @@ import { HeroSection } from '@/components/page/top/HeroSection/HeroSection'
 import { PositionSection } from '@/components/page/top/PositionSection/PositionSection'
 import { ProcessSection } from '@/components/page/top/ProcessSection/ProcessSection'
 import { SkillSection } from '@/components/page/top/SkillSection/SkillSection'
+import { WorkExperience } from '@/components/page/top/WorkExperience/WorkExperience'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <SkillSection />
       <PositionSection />
       <ProcessSection />
+      <WorkExperience />
     </main>
   )
 }
