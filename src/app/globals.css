@@ -10,6 +10,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .palt {
+    font-feature-settings: 'palt';
+  }
 }
 
 @layer base {
