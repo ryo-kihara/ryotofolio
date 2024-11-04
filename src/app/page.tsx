@@ -2,6 +2,7 @@ import { AboutSection } from '@/components/page/top/AboutSection/AboutSection'
 import { HeroSection } from '@/components/page/top/HeroSection/HeroSection'
 import { PositionSection } from '@/components/page/top/PositionSection/PositionSection'
 import { ProcessSection } from '@/components/page/top/ProcessSection/ProcessSection'
+import { ProjectSection } from '@/components/page/top/ProjectSection/ProjectSection'
 import { SkillSection } from '@/components/page/top/SkillSection/SkillSection'
 import { WorkExperience } from '@/components/page/top/WorkExperience/WorkExperience'
 
@@ -14,6 +15,7 @@ export default function Home() {
       <PositionSection />
       <ProcessSection />
       <WorkExperience />
+      <ProjectSection />
     </main>
   )
 }
