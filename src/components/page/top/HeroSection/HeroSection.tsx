@@ -13,10 +13,8 @@ export const HeroSection = () => {
             <AvatarFallback>R</AvatarFallback>
           </Avatar>
         </BlurFade>
-        <BlurFade className="text-3xl font-bold sm:text-5xl xl:text-6xl" inView>
-          Hi, I&apos;m {DATA.name}.
-        </BlurFade>
-        <BlurFade className="max-w-xl text-center md:text-base" inView>
+        <BlurFade className="text-3xl font-bold sm:text-5xl xl:text-6xl">Hi, I&apos;m {DATA.name}.</BlurFade>
+        <BlurFade className="max-w-xl text-center md:text-base">
           {DATA.description.ja.map((description, index) => (
             <span key={index} className="inline-block">
               {description}
