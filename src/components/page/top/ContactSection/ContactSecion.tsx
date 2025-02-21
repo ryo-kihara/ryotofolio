@@ -22,7 +22,7 @@ export const ContactSection = () => {
                 Email
               </Link>{' '}
               か{' '}
-              <Link href={DATA.contact.email.href} className="text-blue-500 hover:underline">
+              <Link href={DATA.contact.notionForm.href} className="text-blue-500 hover:underline">
                 Notion Form
               </Link>{' '}
               からお願いします。 <br className="hidden md:inline" />
