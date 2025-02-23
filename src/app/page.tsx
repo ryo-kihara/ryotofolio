@@ -1,4 +1,5 @@
 import { AboutSection } from '@/components/page/top/AboutSection/AboutSection'
+import { CertificationSection } from '@/components/page/top/CertificationSection/CertificationSection'
 import { ContactSection } from '@/components/page/top/ContactSection/ContactSecion'
 import { HeroSection } from '@/components/page/top/HeroSection/HeroSection'
 import { PositionSection } from '@/components/page/top/PositionSection/PositionSection'
@@ -16,6 +17,7 @@ export default function Home() {
       <PositionSection />
       <ProcessSection />
       <WorkExperience />
+      <CertificationSection />
       <ProjectSection />
       <ContactSection />
     </main>
