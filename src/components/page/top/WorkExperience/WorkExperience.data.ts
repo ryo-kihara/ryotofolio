@@ -1,7 +1,16 @@
-import { Building, ChartColumnIncreasing, Landmark, Newspaper, School, Truck, UserPen } from 'lucide-react'
+import { Building, ChartColumnIncreasing, Landmark, Newspaper, School, Truck, UserPen, FileText } from 'lucide-react'
 
 export const DATA = {
   workExperiences: [
+    {
+      title: '受注処理システム開発案件',
+      icon: FileText,
+      dates: '2024/12 - 2025/2',
+      positions: ['SE', 'PG'],
+      stacks: ['Laravel', 'Linux', 'Docker'],
+      description:
+        'DDD を活用したドメインモデルの設計・クリーンアーキテクチャ構成での実装・インフラの作業として検証環境と本番環境の構築を担当。',
+    },
     {
       title: 'ふるさと納税返礼品管理ツール開発',
       icon: Truck,
@@ -34,7 +43,7 @@ export const DATA = {
       icon: Building,
       dates: '2022/9-2023/11',
       positions: ['PL', 'SE', 'PG'],
-      stacks: ['Laravel', 'WordPress', 'Node.js', 'Nuxt', 'Next', 'TypeScript', 'AWS'],
+      stacks: ['Next.js', 'Node.js', 'Nuxt.js', 'TypeScript', 'Laravel', 'WordPress', 'AWS'],
       description: '6プロジェクトほどの社内システム・事業LPの開発に携わり、社内業務の効率化・サービスの改善を行った。',
     },
     {
@@ -42,7 +51,7 @@ export const DATA = {
       icon: ChartColumnIncreasing,
       dates: '2022/3-2022/8',
       positions: ['PG'],
-      stacks: ['Laravel', 'Nuxt', 'TypeScript'],
+      stacks: ['TypeScript', 'Nuxt.js', 'Laravel'],
       description:
         '1stリリース前にアサインし、難易度の高い実装タスクをメインに着手。フロント・バック両方のタスクに着手し、遅延なくリリースまで携わった。',
     },
@@ -60,7 +69,7 @@ export const DATA = {
       icon: Landmark,
       dates: '2020/12-2021/11',
       positions: ['SE', 'PG'],
-      stacks: ['Vue', 'Node.js', 'TypeScript', 'CauchDB'],
+      stacks: ['TypeScript', 'Vue.js', 'Node.js', 'CouchDB'],
       description:
         'フロント・バック両方の設計と実装を担当。マイクロサービスで構築されており、約20のリポジトリ間での連携がされていたため、汎用性を重視した設計と実装を行った。',
     },
