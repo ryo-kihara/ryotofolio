@@ -1,7 +1,36 @@
-import { Building, ChartColumnIncreasing, Landmark, Newspaper, School, Truck, UserPen, FileText } from 'lucide-react'
+import {
+  Building,
+  ChartColumnIncreasing,
+  HeartHandshake,
+  Landmark,
+  Megaphone,
+  Newspaper,
+  School,
+  Truck,
+  UserPen,
+  FileText,
+} from 'lucide-react'
 
 export const DATA = {
   workExperiences: [
+    {
+      title: '介護系管理サイト開発案件',
+      icon: HeartHandshake,
+      dates: '2025/8 - 2026/2',
+      positions: ['SE', 'PG'],
+      stacks: ['Next.js', 'TypeScript'],
+      description:
+        'Next.js の技術選定のサポート・意思決定をしながら、AIエージェントを使用し、並列実装を駆使した開発で見積もりから2週間巻きができた。',
+    },
+    {
+      title: 'キャンペーンサイト開発案件',
+      icon: Megaphone,
+      dates: '2025/3 - 2026/2',
+      positions: ['SE', 'PG'],
+      stacks: ['React', 'TypeScript', 'Node.js'],
+      description:
+        '海外エンジニアと共に働き、複数リポジトリをマイクロサービスで管理、また大規模なリプレイス作業も完遂した。',
+    },
     {
       title: '受注処理システム開発案件',
       icon: FileText,
