@@ -1,6 +1,7 @@
 import AstroIcon from '@/assets/images/skills/astro.svg'
 import AwsIcon from '@/assets/images/skills/aws.svg'
 import DockerIcon from '@/assets/images/skills/docker.svg'
+import ExpoIcon from '@/assets/images/skills/expo.svg'
 import FigmaIcon from '@/assets/images/skills/figma.svg'
 import LaravelIcon from '@/assets/images/skills/laravel.svg'
 import MysqlIcon from '@/assets/images/skills/mysql.svg'
@@ -29,5 +30,7 @@ export const DATA = {
     { name: 'Docker', icon: DockerIcon },
     { name: 'MySQL', icon: MysqlIcon },
     { name: 'PostgreSQL', icon: PostgresqlIcon },
+    { name: 'Expo', icon: ExpoIcon },
+    { name: 'React Native', icon: ReactIcon },
   ],
 } as const
